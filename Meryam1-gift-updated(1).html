@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>هدية مريم 💗</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap');
+:root{--pink:#f6b7c9;--rose:#b52e57;--ink:#5d263c}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:Cairo,system-ui,sans-serif;color:var(--ink);background:radial-gradient(circle at 15% 10%,#fff 0,#ffeaf1 35%,#f8c7d5 100%);overflow-x:hidden}
+.page{display:none;min-height:100vh;padding:28px 18px;align-items:center;justify-content:center;position:relative}
+.page.active{display:flex}
+.panel{width:min(680px,100%);min-height:72vh;padding:34px 22px;border:1px solid #ffffffb8;border-radius:28px;background:#fff9fbee;box-shadow:0 18px 55px #8b315022;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.cover .panel{background:linear-gradient(150deg,#fffafc,#ffe1eb);border:2px solid #fff}
+.ornament{font-size:clamp(28px,6vw,48px);letter-spacing:8px;margin:8px 0;color:#c54b70}
+h1{font-size:clamp(34px,8vw,64px);line-height:1.25;margin:10px 0;color:#a82e59}
+.age{font-size:clamp(23px,5vw,34px);font-weight:800;color:#7b2948;margin:8px 0}
+.date{font-size:clamp(19px,4vw,25px);color:#9a526c;margin:0 0 20px}
+.flowers{font-size:clamp(30px,7vw,54px);margin:12px 0;filter:drop-shadow(0 5px 5px #b64a6b22)}
+button{font:700 17px Cairo,sans-serif;border:0;border-radius:999px;padding:12px 27px;background:linear-gradient(100deg,#b92f5c,#e7779b);color:white;box-shadow:0 8px 20px #b52e5733;cursor:pointer;margin:10px 5px}
+button.secondary{background:#fff;color:#a8325b;border:1px solid #e9a5ba;box-shadow:none}
+h2{font-size:clamp(27px,6vw,40px);color:#a8325b;margin:8px 0 18px}
+.letter{text-align:right;line-height:2.05;font-size:clamp(16px,3.8vw,19px);white-space:normal;width:100%;max-width:590px}
+.letter p{margin:0 0 13px}
+.music-frame{width:100%;max-width:560px;aspect-ratio:16/9;border:0;border-radius:18px;background:#1b1015;box-shadow:0 12px 30px #57233a22}
+.small{color:#9c6176;font-size:14px;margin-top:12px}
+.heart{position:absolute;color:#e58aa7;opacity:.45;animation:float 8s ease-in-out infinite;pointer-events:none}
+@keyframes float{0%,100%{transform:translateY(12px) rotate(-8deg)}50%{transform:translateY(-22px) rotate(8deg)}}
+@media(prefers-reduced-motion:reduce){.heart{animation:none}}
+</style>
+</head>
+<body>
+<section class="page cover active" id="p1">
+ <span class="heart" style="top:8%;left:8%;font-size:35px">♥</span><span class="heart" style="bottom:10%;right:8%;font-size:42px">♡</span>
+ <main class="panel">
+  <div class="ornament">♥ ♡ ♥ ♡ ♥</div>
+  <div class="flowers">🌹 💐 🎁 🌷</div>
+  <h1>مريم</h1>
+  <div class="age">أتممتِ 19 سنة 🎂</div>
+  <div class="date">22 نوفمبر 2026</div>
+  <div class="flowers">🎀 🌹 💝 🌹 🎀</div>
+  <div class="ornament">♡ ♥ ♡ ♥ ♡</div>
+  <button onclick="showPage(2)">افتحي الهدية 💗</button>
+ </main>
+</section>
+<section class="page" id="p2">
+ <span class="heart" style="top:10%;right:8%;font-size:35px">♡</span>
+ <main class="panel">
+  <div class="ornament">♡ ♥ ♡</div>
+  <h2>أغنيتنا يا مريم 🎶</h2>
+  <p>هذه أغنيتنا… خليها تكون جزء من هديتك ❤️</p>
+  <iframe class="music-frame" src="https://www.youtube-nocookie.com/embed/hnbALhWMLJI?rel=0" title="أغنيتنا لمريم" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+  <p class="small">إذا ما اشتغل المقطع داخل الصفحة، افتحيه من يوتيوب.</p>
+  <div><button class="secondary" onclick="showPage(1)">رجوع</button><button onclick="showPage(3)">الرسالة 💌</button></div>
+ </main>
+</section>
+<section class="page" id="p3">
+ <span class="heart" style="top:7%;left:8%;font-size:34px">♥</span>
+ <main class="panel">
+  <div class="ornament">♥ ♡ ♥</div>
+  <h2>يا أجمل حكاية ❤️</h2>
+  <article class="letter">
+   <p><strong>إلى مريم… حبيبتي ❤️</strong></p>
+   <p>مريم، يا أجمل صدفة صارت في حياتي…</p>
+   <p>اليوم مش مجرد يوم عيد ميلادك، اليوم هو يوم مميز بالنسبة لي، لأنه اليوم اللي انولدت فيه إنسانة غالية على قلبي، إنسانة وجودها صار جزءًا جميلًا من أيامي، وصار لها مكانة ما يقدر أي كلام يوصفها.</p>
+   <p>ثلاث سنين مرّت علينا… ثلاث سنين فيها ذكريات ومواقف وضحكات وكلام طويل، وفيها أيام حلوة وأيام صعبة، لكن الشيء اللي ما تغيّر فيها هو إنك ما زلتِ إنسانة غالية عليّ، وما زال قلبي يختارك كل يوم.</p>
+   <p>تعرفي يا مريم؟ أجمل شيء في علاقتنا مش بس إننا بقينا مع بعض كل هالمدة، بل إن علاقتنا صارت أحسن، وإننا مع الوقت فهمنا بعض أكثر، وتعلّمنا كيف نكون أقرب لبعض، وكيف نعدّوا الأيام الصعبة ونفرحوا بالأيام الحلوة.</p>
+   <p>يمكن في البداية ما كنتش نتخيّل إن شخصًا واحدًا يقدر يكون له كل هالمكان في قلبي، لكن مع مرور الوقت اكتشفت إن حبي ليك مش شيء ينقص مع الأيام، بالعكس… كل يوم يمرّ يزيدني تعلّقًا بيك، ويخليني نكتشف فيك حاجة جديدة تخليني نحبك أكثر.</p>
+   <p>نبيك تعرفي إنك مش مجرد شخص نحكي معاه كل يوم، أنتِ إنسانة نفرح بوجودها، ونحب نشاركها تفاصيل يومي، ونحب نسمع أخبارها، ونحب نعرف كيف كان يومها، وشن اللي فرّحها وشن اللي ضايقها.</p>
+   <p>حتى أبسط التفاصيل منك عندها قيمة عندي. كلمة منك تقدر تبدّل مزاج يوم كامل، واهتمامك يخليني نحس إن الدنيا ما زال فيها حاجات جميلة تستاهل نفرحوا بيها.</p>
+   <p>مريم، يمكن ما نعرفش دائمًا نعبر بالطريقة الصح، ويمكن مرات كلامي ما يوصلش كل اللي في قلبي، لكن صدقيني إن مشاعري أكبر من أي رسالة، وأكبر من كل الكلمات اللي نقدر نكتبها.</p>
+   <p>نبيك تكوني عارفة إنني نقدر وجودك في حياتي، ونقدّر كل لحظة حلوة عشناها، وكل مرة وقفنا فيها مع بعض، وكل مرة حاولنا نفهموا بعض أكثر.</p>
+   <p>ما نبيش تكون علاقتنا مجرد سنوات نحسبوها، نبي كل سنة تكون أجمل من اللي قبلها، ونبي كل يوم جديد يعطينا سببًا إضافيًا باش نتمسكوا ببعض ونحافظوا على الشيء الجميل اللي بيناتنا.</p>
+   <p>وفي عيد ميلادك، نتمنى لك من قلبي فرحة ما تنتهيش، وراحة بال، ونجاح في كل خطوة، وتحقيق لكل الأحلام اللي في بالك. نتمنى تشوفي نفسك دائمًا بعين جميلة، وتعرفي قدّاش أنتِ إنسانة تستاهل الحب والاهتمام وكل شيء حلو في هالدنيا.</p>
+   <p>ولو كان عندي أمنية نطلبها في هاليوم، فهي إنك تبقي سعيدة، وإن الأيام الجاية تحمل لك أجمل مما تتمنّي، وإننا نعيشوا ذكريات أحلى من كل اللي فات.</p>
+   <p>شكرًا لأنك كنتِ جزءًا من حياتي خلال هالسنين، وشكرًا على كل لحظة حلوة، وعلى كل ابتسامة، وعلى كل إحساس جميل عشته بسببك.</p>
+   <p><strong>كل عام وأنتِ حبيبتي، وكل عام وأنتِ أقرب لقلبي، وكل عام وحبي ليك يكبر أكثر من اليوم اللي قبله.</strong></p>
+   <p>عيد ميلاد سعيد يا مريم، يا أجمل هدية منحتني إياها الحياة.</p>
+   <p><strong>نحبك اليوم، وبكرة، وكل يوم أكثر من اللي قبله. ❤️</strong></p>
+   <p>من شخص يتمنى لكِ السعادة دائمًا…</p>
+  </article>
+  <div class="ornament">♥ ♥ ♥ ♥ ♥</div>
+  <p>منّي ليكِ، بكل الحب والامتنان 💗</p>
+  <button class="secondary" onclick="showPage(2)">رجوع للأغنية</button>
+ </main>
+</section>
+<script>
+function showPage(n){
+ document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+ document.getElementById('p'+n).classList.add('active');
+ window.scrollTo({top:0,behavior:'smooth'});
+}
+</script>
+</body></html>
